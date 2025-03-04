@@ -1,4 +1,3 @@
-
 class PlanetBuilder {
     constructor() {
         this.orbits = Array(4).fill().map(() => []);
