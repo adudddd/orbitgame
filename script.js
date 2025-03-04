@@ -81,10 +81,10 @@ class PlanetBuilder {
     }
 
     hasConflict(orbit1, orbit2) {
-        return orbit1.some(element => element === 'fire') && 
-               orbit2.some(element => element === 'water') ||
-               orbit1.some(element => element === 'water') && 
-               orbit2.some(element === 'fire');
+        return (orbit1.some(element => element === 'fire') && 
+               orbit2.some(element => element === 'water')) ||
+               (orbit1.some(element => element === 'water') && 
+               orbit2.some(element => element === 'fire'));
     }
 
     createExplosion(orbitIndex) {
